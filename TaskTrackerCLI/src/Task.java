@@ -1,14 +1,52 @@
+import java.time.LocalDateTime;
+
+import static java.time.LocalDateTime.now;
+
 public class Task {
-    boolean state;
+    String status;
     int id;
-    String name;
+    String description;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
 
-    public Task(int id, String name, boolean state) {
+    public Task(int id, String description, String status) {
         this.id = id;
-        this.name = name;
-        this.state = state;
+        this.description = description;
+        this.status = status;
+        this.createdAt =  now();
+        this.updatedAt =  now();
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public LocalDateTime getCreatedAt(){
+        return this.createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt(){
+        return this.updatedAt;
+    }
+
+    public void setDescription(String name) {
+        this.description = name;
+    }
+
+    public void setStatus(String status){
+        this.status = status;
+    }
+
+    public void setUpdatedAt(){
+        this.updatedAt = now();
+    }
 }
