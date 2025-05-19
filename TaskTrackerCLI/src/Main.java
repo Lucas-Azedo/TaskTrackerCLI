@@ -1,7 +1,7 @@
+
 public class Main {
     public static void main(String[] args) {
         TaskManager manager = new TaskManager();
-
         String command = args[0];
 
         switch(command){
@@ -26,7 +26,7 @@ public class Main {
                 break;
 
             case "list":
-                if(args[1].isEmpty()) {
+                if(args.length == 1) {
                     manager.list();
                 }
                 else{

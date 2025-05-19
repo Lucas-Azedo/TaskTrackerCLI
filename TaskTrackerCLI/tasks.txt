@@ -1,0 +1,4 @@
+1;Comprar pão;done
+3;Fazer exercícios físicos na academia;todo
+4;lavar as loucas;todo
+5;done;todo

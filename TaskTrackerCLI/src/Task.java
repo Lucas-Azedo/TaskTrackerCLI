@@ -1,8 +1,11 @@
 import java.time.LocalDateTime;
-
+import java.time.format.DateTimeFormatter;
 import static java.time.LocalDateTime.now;
 
 public class Task {
+
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+
     String status;
     int id;
     String description;
@@ -30,13 +33,14 @@ public class Task {
         return status;
     }
 
-    public LocalDateTime getCreatedAt(){
-        return this.createdAt;
+    public String getCreatedAt() {
+        return createdAt.format(formatter);
     }
 
-    public LocalDateTime getUpdatedAt(){
-        return this.updatedAt;
+    public String getUpdatedAt() {
+        return updatedAt.format(formatter);
     }
+
 
     public void setDescription(String name) {
         this.description = name;
