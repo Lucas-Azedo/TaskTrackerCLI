@@ -22,14 +22,15 @@ Edit
 java -cp bin Main <comando> [argumentos]
 
 📚 Comandos disponíveis
-Comando          |	Uso exemplo	                                    | Descrição
-add	             | java -cp bin Main add "Estudar Java"             |	Adiciona uma nova tarefa
-list	           | java -cp bin Main list	                          | Lista todas as tarefas
-list <status>	   | java -cp bin Main list done	                    | Lista tarefas filtradas por status
-update	         | java -cp bin Main update 3 "Novo nome da tarefa" |	Atualiza o nome de uma tarefa
-delete           | java -cp bin Main delete 2	                      | Deleta uma tarefa pelo ID
-mark-in-progress | java -cp bin Main mark-in-progress 1	            | Marca a tarefa como "in progress"
-mark-done	       | java -cp bin Main mark-done 1	                  | Marca a tarefa como "done"
+| Comando           | Uso exemplo                                         | Descrição                                 |
+|-------------------|-----------------------------------------------------|-------------------------------------------|
+| `add`             | `java -cp bin Main add "Estudar Java"`              | Adiciona uma nova tarefa                  |
+| `list`            | `java -cp bin Main list`                            | Lista todas as tarefas                    |
+| `list <status>`   | `java -cp bin Main list done`                       | Lista tarefas filtradas por status        |
+| `update`          | `java -cp bin Main update 3 "Novo nome da tarefa"`  | Atualiza o nome de uma tarefa             |
+| `delete`          | `java -cp bin Main delete 2`                        | Deleta uma tarefa pelo ID                 |
+| `mark-in-progress`| `java -cp bin Main mark-in-progress 1`              | Marca a tarefa como "in progress"         |
+| `mark-done`       | `java -cp bin Main mark-done 1`                     | Marca a tarefa como "done"                |
 
 📁 Armazenamento
 As tarefas são salvas automaticamente no arquivo tasks.txt no mesmo diretório do programa.
